@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<title>Ergotherapeut Stef</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+  body, html {
+    height: 100%;
+    color: #222;
+
+    line-height: 1.8;
+
+  }
+  body p{
+    /*color: #80AFD9;*/
+    /*color: #00FFFF;*/
+    /*color: 66,103,178;*/
+    /*color: rgba(0, 0, 255, 0.5);*/
+    color:black;
+  }
+
+h1,h2,h3{
+      font-weight: 600;
+}
+  /* Create a Parallax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('images/5oldWhite.jpg');
+    min-height: 60%;
+    /*width:100%;*/
+    /*height:auto;*/
+  }
+
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("images/parallax2.jpg");
+    min-height: 200px;
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("images/parallax3.jpg");
+    min-height: 400px;
+  }
+
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
+
+
+/* LIST #2 */
+/*#list2 { width:320px; }*/
+#list2 ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#bfe1f1;  }
+#list2 ol li { }
+#list2 ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:black; border-left: 1px solid #999; }
+
+#list2 ul {
+list-style-type: none;
+}
+
+  /* Turn off parallax scrolling for tablets and phones */
+
+  @media only screen and (min-device-width:1600px){
+    .mapcontact{
+      display:flex;
+    }
+  }
+  @media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+    .mapcontact{
+      display:block;
+    }
+  }
+
+  .logoStef{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    /*transform: translate(-50%,-50%);*/
+  }
+
+  .map{
+    border-style: groove;
+    border-color:#79C5E7;
+    border-radius: 5px;
+  }
+  .lb{
+   /* background-color:#79C5E7;*/
+  }
+  .centerDiv{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  .navbar{
+      text-align: center;
+  }
+  .navbaritems{
+    display: inline-block;
+  }
+  .w3-bar{
+    font-size: 20px;
+  }
+
+
+  .mutualiteit{
+      border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 12%;
+  float:left; 
+  display:inline; 
+  height: 120px;
+  }
+
+  .mutualiteitContainer{
+      position: relative;
+  width: 100%;
+  }
+
+  .imageSection img{
+    height: 400px;
+    margin:10px;
+
+    border:1px solid black;
+
+  }
+
+.ergo{
+  width: 75%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.quoteImages{
+      position: relative;
+  width: 100%;
+
+}
+.quoteImage img{
+      border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 10px;
+  margin:30px;
+  width: 25%;
+  float:left; 
+  display:inline; 
+  height: 225px;
+}
+
+div.item {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: 30%;
+    margin:10px;
+}
+
+div.item img{
+      width: 100%;
+  border-radius: 200px;
+  /*border: 2px solid #73AD21;*/
+  border: 2px solid #0397ed;
+    background-color: grey;
+
+}
+div.item span{
+  margin-top: 20px;
+  width: 85%;
+  text-align:center;
+  display:inline-block
+  font-size:30px;
+  }
+
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
+
+.onderErgo {
+text-align:center;
+margin-bottom: 20px;
+overflow: auto;
+    
+}
+
+.onderErgoImage{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 20px;
+   
+
+}
+
+.onderErgoImage img{
+   border-radius: 10px;
+}
+
+.slogan{
+  text-align: center;
+  padding:10px;
+
+  font-size: 50px;
+
+
+   /*color: #ADD8E6;*/
+   color: black;
+/*
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+       */
+}
+
+
+/* LIST #2 */
+#list2n { width: 75%; }
+#list2n ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; }
+#list2n ol li {  }
+#list2n ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:13px; border-left: 1px solid #999; }
+#list2n ol li p em { display:block; }
+
+
+.list2nn li {
+  border-left: 0px solid #999;
+  font-size:12px;
+}
+
+.fa-fw {
+  margin-top:7px;
+}
+
+.w3-padding-64{
+  padding-bottom: 0px!important;
+}
+
+@media only screen and (max-width:920px) and (min-width: 761px) {
+  .w3-bar {
+      font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:760px) {
+  .mutualiteit{
+      width: 25%;
+  }
+
+
+
+  div.item {
+    width:40%;
+  }  
+
+  .mobile{
+    float: left;
+    text-align: center;
+  }
+
+  .w3-padding-64 {
+    padding-top: 36px!important;
+    padding-bottom: 0px!important; 
+  }
+
+  .w3-show-block, .w3-show{
+    /*margin-top: 40px;*/
+  }
+
+  .centerDiv{
+    width: 90%;
+  }
+
+  .onderErgo img{
+    width:40%;
+    margin-left: 20px;
+    height:200px;
+
+  }
+  .onderErgoImage {
+    display: block;
+    margin:auto;
+  }
+
+  .slogan{
+    width: 90%;
+    float:left;
+  }
+}
+
+
+@media only screen and (max-width:620px) {
+  .mutualiteit{
+      width: 25%;
+  }
+  div.item {
+    width:40%;
+  }  
+
+  .mobile{
+    float: left;
+    text-align: center;
+  }
+
+  .w3-padding-64 {
+    padding-top: 36px!important;
+    padding-bottom: 0px!important; 
+  }
+
+  .w3-show-block, .w3-show{
+    /*margin-top: 40px;*/
+  }
+
+  .centerDiv{
+    width: 90%;
+  }
+
+  .onderErgo img{
+    width:40%;
+    margin-left: 20px;
+    height:200px;
+
+  }
+  .onderErgoImage {
+    display: block;
+     margin:auto;
+  }
+  #list2n{
+    width:100%;
+  }
+
+}
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar " id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Over mij</a>
+      <a href="#behandelingen" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th-list"></i> Behandelingen</a>
+      <a href="#terugbetaling" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wheelchair"></i> Terugbetaling</a>
+      <!--
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    -->
+
+
+
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+
+      <div class="w3-right">
+          <i class="fa fa-phone fa-fw w3-bar-item w3-button w3-hide-small w3-xlarge w3-padding"></i>
+
+          <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-padding">0470/519903</a>
+      </div>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Over mij</a>
+    <a href="#behandelingen" class="w3-bar-item w3-button" onclick="toggleFunction()">Behandelingen</a>
+     <a href="#terugbetaling" class="w3-bar-item w3-button" onclick="toggleFunction()">Terugbetaling</a>   
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="logoStef" style="white-space:nowrap;">
+    <!--<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>-->
+    <img width="60%" src="images/2logoTrans.png">
+
+</div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container" id="about">
+
+  <div class="w3-col m6 w3-center w3-padding-large">
+
+      <img src="images/10stefelderleyzoomin.png" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+  </div>
+  <div class="w3-col m6">
+    <h3 class="w3-center"><u>Over mij</u></h3>
+    <p>Ik ben Stef De Meerleer, afgestudeerd als bachelor in de ergotherapie aan de Arteveldehogeschool in Gent.
+          Al vanaf jonge leeftijd had ik een bepaalde drang om te ondernemen en mijn eigen ding te doen. Een van mijn talenten was de zorg voor mijn grootouders. Deze zorg wil ik nu over brengen naar anderen. Ikzelf specialiseer mij in de ouderenzorg. Met als doel:
+          </p>
+              <h1 class="slogan w3-center">"Blijf langer thuis met Stef aan huis!"</h1>
+  </div>
+</div>
+
+    <h3 class="w3-center"><u>Wat is Ergotherapie?</u></h3>
+    <div class="centerDiv">
+            <p>Ergotherapie is een paramedisch beroep dat zich focust op de herstel en bewaren van de zelfstandigheid van een persoon.
+            Bij een ergotherapeutische behandeling kijkt men zowel naar de persoon, de omgeving als de activiteit voor ontwikkelen van kwalitatieve therapiesessies. Dit kan zowel  op kort als lange termijn.
+           Een ergotherapeut kan verschillende therapieën aanbieden aan de doelgroep met als hoofddoel het trainen, behouden en herstellen van alledaagse activiteiten.</p>
+      </div>
+
+<div class="onderErgo">
+  <div class="onderErgoImage">
+    <img src="images/11badkamer.png" class="w3-round w3-image mobile " alt="Photo of Me" width="500" >
+  </div>
+
+    <div class="onderErgoImage">
+    <img src="images/12oefeningen.png" class="w3-round w3-image mobile" alt="Photo of Me" width="450">
+  </div>
+</div>
+
+    <!-- Hide this text on small devices -->
+
+
+
+
+  <div class="w3-content w3-container"  id="behandelingen">
+    <h3 class="w3-center"><u>Behandelingen</u></h3>
+    <div class="w3-content w3-container"  id="list2n">
+   <ol class="w3-center">
+      <li><p><em><u>ADL-training (zelfredzaamheid)</u></em>Is het trainen van de alledaagse activiteiten met als doel de zelfredzaamheid te bevorderen.<br>
+
+      Wassen in bad
+      - Douche of lavabo
+      - Aan- en uitkleden
+      - Toiletbezoek
+      - Huishoudelijke taken
+      - Maaltijd
+
+</p></li>
+      <li><p><em><u>Woning aanpassing</u></em>Wanneer je ouder wordt of een ziekte of beperking heeft kan het zijn dat je huis niet meer zo praktische is. Doormiddel van ergotherapeutische advies kan men de woning aanpassen aan uw noden en wensen om zo lang mogelijk zelfstandig thuis te wonen.</p></li>
+
+      <li><p><em><u>Hulpmiddelen en mobiliteitsmiddelen</u></em>Wanneer sommige handelingen niet meer lukken en er geen herstel mogelijk is kan de ergotherapeut samen met u kijken welke mogelijke hulpmiddelen er op de markt zijn om uw leven makkelijker te laten verlopen.
+      - Mobiliteitshulpmiddelen
+      - Orthesen
+      - Prothesen
+      - Keuken en koken
+      - Wonen
+      - Persoonlijke hygiëne
+</p></li>
+      <li><p><em><u>Ergonomie</u></em>Ergonomie is het aanpassen van de omgeving aan de mens. Dit kan een product, ruimte of werkplek zijn. Ergonomie zit vervat in ons dagelijks leven, maar is vooral gekend in werksituaties. Ergonomie staat voor gezond en efficiënt werken.
+</p></li>
+      <li><p><em><u>Cognitieve/ geheugentraining</u></em>Cognitieve Training heeft als doel het optimaal leren benutten van geheugen. Door te leren (anders) om te gaan met cognitieve problemen, leert u beter gebruik te maken van uw mogelijkheden. Hierdoor krijgt u meer vertrouwen in uw eigen geheugen- en concentratievermogen. Tijdens de training krijgt u inzicht in de werking van het geheugen en de aandacht. Daarnaast wordt er ook aandacht besteed aan het gebruik van hulpmiddelen.
+</p></li>
+      <li><p><em><u>Valpreventie</u></em>Wanneer men ouder wordt stijgt de kans op vallen. Door middel van  ergotherapeutische advies en behandelingen kan dit gereduceerd worden. Dit door de testing van de valangst en het valrisico.
+</p></li>
+   </ol>
+</div>
+ </div>
+
+  <h3 class="w3-center"><u>Waarom kiezen voor Ergotherapie?</u></h3>
+  <div class="w3-content w3-container">
+    <div class="item">
+        <img src="images/7afspraak1.png"> 
+        <span class="caption">"Ik wil zo lang mogelijk in mijn eigen huis blijven wonen. Dit is mijn thuis!"</span>
+    </div>
+    <div class="item">
+        <img src="images/4youngold1.png"> 
+        <span class="caption">"Een rusthuis of een woonzorgcentrum zijn voor mij echt te duur. Ook zijn de wachtlijsten te lang."</span>
+    </div>
+    <div class="item">
+        <img src="images/IMG_4678_1.png"> 
+        <span class="caption">"Mijn huis wordt te groot en te gevaarlijk om in te blijven wonen, zijn daar oplossingen voor?"</span>
+    </div>
+  </div>
+
+
+      <div class="w3-content w3-container w3-padding-64" id="terugbetaling">
+        <h3 class="w3-center"><u>Terugbetaling</u></h3>
+        <div class="w3-content w3-container">
+                    <p>In een eerste vrij blijvende en kosteloze afspraak kijk ik graag met u naar de mogelijkheden die er zijn. Afhankelijk van bij welke mutualiteit u bent aangesloten heeft u recht op een gedeeltelijke terugbetaling. Samen met u gaan we op zoek naar een kwalitatieve en betaalbare zorg.
+                    </p>
+        </div>
+        <div class="w3-content w3-container"  id="list2">
+                  <ul class="w3-center">
+                      <div class="mutualiteitContainer" >
+                      <img  class="mutualiteit" src="images/mutualiteit/bondmoyson.jpg" </p>
+                      <img  class="mutualiteit" src="images/mutualiteit/cm.jpg" </p>
+                      <img  class="mutualiteit" src="images/mutualiteit/lm.png" </p>
+                      <img  class="mutualiteit" src="images/mutualiteit/nzv.jpg" </p>
+                      <img  class="mutualiteit" src="images/mutualiteit/oz.jpg" </p>
+                      <img  class="mutualiteit" src="images/mutualiteit/partena.png" </p>
+                      <img  class="mutualiteit" src="images/mutualiteit/symbio.png" </p>
+                      <img  class="mutualiteit" src="images/mutualiteit/vnz.jpg" </p>
+
+                      </div>
+
+                  </ul>
+          </div>
+      </div>
+
+
+<!-- Container (Portfolio Section) -->
+<!--
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">Mijn tevreden klanten</h3>
+</div>
+-->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center"><u>Contact</u></h3>
+
+
+  <div class=" mapcontact w3-row w3-padding-32 w3-section">
+    <div style="flex:0.8;" class="w3-col m4 w3-container">
+
+      <img src="images/9map.png" class="w3-image w3-greyscale-min map" style="width:100%" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <div style="flex:1;" class=" contactinfo w3-col m12 w3-panel">
+      <div  class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Gentsestraat 96, Burst<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> GSM: 0470/519903<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Ergotherapeut.stef@gmail.com<br>
+       <p>Neem gerust vrijblijvend contact op voor meer informatie. <i class="fa fa-coffee"></i></p>
+      </div>
+
+      <div  class="w3-col m12 'w3-panel">
+        <p>Of stuur mij een berichtje!</p>
+        <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Naam" required name="Name">
+            </div>
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="bericht" required name="Message">
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> Verstuur bericht!
+            </button>
+        </form>
+    </div>
+  <div>
+
+
+<!-- Footer -->
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
